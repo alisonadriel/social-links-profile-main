@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+     /* Cor principal */
+    --Green: hsl(34, 91%, 64%);
+
+
+    /* Cores neutras */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Black: hsl(0, 0%, 8%);
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--Black);
+    color: var(--White);
+    padding: 1.8rem 3rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    background-color: var(--Dark-Grey);
+    padding: 1.4rem;
+    margin: auto;
+    width: 18rem;
+    height: 27rem;
+    border-radius: 0.8rem;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:0.8rem;
+    transition-duration: 0.2s;
+    
+}
+
+
+
+.foto img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+    transition-duration: 0.2s;
+}
+
+.foto img:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.loc{
+    color: var(--Green);
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 1rem;
+    margin-top: 0.8rem;
+}
+
+.ocup{
+    font-size: 0.65rem;
+    margin-top: 0.75rem;
+    letter-spacing: 1px;
+}
+
+.button-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    background-color: var(--Grey);
+    color: var(--White);
+    padding: 0.6rem 0.8rem;
+    border: none;
+    border-radius: 0.4rem;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition-duration: 0.1s;
+}
+
+.btn:hover{
+    background-color: var(--Green);
+    color: var(--Black);
+    cursor: pointer;
+    transform: translateY(-4px);
+}
